@@ -9,6 +9,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 find_package(spdlog CONFIG REQUIRED)
 find_package(imgui CONFIG REQUIRED)
+find_package(fmt CONFIG REQUIRED)
 
 file(GLOB_RECURSE SOURCES
     ${PROJECT_SOURCE_DIR}/src/core/*.cpp
@@ -31,6 +32,7 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 target_link_libraries(${PROJECT_NAME} PRIVATE 
     spdlog::spdlog_header_only
     imgui::imgui
+    fmt::fmt-header-only
     d3d11
     dxgi
     d3dcompiler
