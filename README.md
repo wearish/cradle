@@ -21,7 +21,7 @@ cmake -S . -B build -G "Visual Studio 17 2022"
 cmake --build build --config Release
 ```
 after a successful build, the executable will be located at build\bin\release\cradle.exe.
-a working build will also always be published in the [releases](https://github.com/wearish/cradle/releases) tab.
+a working build will also always be published in the [releases](https://github.com/wearish/cradle/releases/tag/release) tab.
 
 ## why this project exists
 there aren’t many open-source externals for roblox. most of the ones that do exist are unmaintained forks of leaked sources and often don’t work properly. wall check is especially rare, and when it does exist, it’s usually broken or low quality. i’m not claiming my external is better in terms of code or fewer bugs than theirs, just sharing what i’ve noticed. the goal here is to have everything someone who cheats in roblox needs and nothing they don’t.
