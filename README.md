@@ -17,8 +17,8 @@ clone the repo and build in release mode:
 ```powershell
 git clone https://github.com/wearish/cradle.git
 cd cradle
-cmake -s . -b build
-cmake --build build --config release
+cmake -S . -B build
+cmake --build build --config Release
 ```
 after a successful build, the executable will be located at build\bin\release\cradle.exe.
 a working build will also always be published in the [releases](https://github.com/wearish/cradle/releases) tab.
