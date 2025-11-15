@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7EEC26AF-D38C-301C-8A1B-876C6A1CF06A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>cradle</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\fried\Desktop\cradle\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cradle.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cradle</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\fried\Desktop\cradle\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cradle.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cradle</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\fried\Desktop\cradle\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">cradle.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">cradle</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\fried\Desktop\cradle\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cradle.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">cradle</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\fried\Desktop\cradle\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/fried/vcpkg/installed/x64-windows/include" /Zc:__cplusplus /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SPDLOG_FMT_EXTERNAL;SPDLOG_FWRITE_UNLOCKED;FMT_SHARED;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;SPDLOG_FMT_EXTERNAL;SPDLOG_FWRITE_UNLOCKED;FMT_SHARED;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\fried\Desktop\cradle\src;C:\Users\fried\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\fried\Desktop\cradle\src;C:\Users\fried\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/fried/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/fried/Desktop/cradle/build/bin/Debug/cradle.exe -installedDir C:/Users/fried/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\fried\vcpkg\installed\x64-windows\debug\lib\imguid.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;dwmapi.lib;C:\Users\fried\vcpkg\installed\x64-windows\debug\lib\fmtd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/fried/Desktop/cradle/build/Debug/cradle.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/fried/Desktop/cradle/build/bin/Debug/cradle.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\fried\Desktop\cradle\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/fried/vcpkg/installed/x64-windows/include" /Zc:__cplusplus /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SPDLOG_FMT_EXTERNAL;SPDLOG_FWRITE_UNLOCKED;FMT_SHARED;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SPDLOG_FMT_EXTERNAL;SPDLOG_FWRITE_UNLOCKED;FMT_SHARED;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\fried\Desktop\cradle\src;C:\Users\fried\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\fried\Desktop\cradle\src;C:\Users\fried\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/fried/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/fried/Desktop/cradle/build/bin/Release/cradle.exe -installedDir C:/Users/fried/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\fried\vcpkg\installed\x64-windows\lib\imgui.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;dwmapi.lib;C:\Users\fried\vcpkg\installed\x64-windows\lib\fmt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/fried/Desktop/cradle/build/Release/cradle.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/fried/Desktop/cradle/build/bin/Release/cradle.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\fried\Desktop\cradle\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/fried/vcpkg/installed/x64-windows/include" /Zc:__cplusplus /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SPDLOG_FMT_EXTERNAL;SPDLOG_FWRITE_UNLOCKED;FMT_SHARED;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SPDLOG_FMT_EXTERNAL;SPDLOG_FWRITE_UNLOCKED;FMT_SHARED;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\fried\Desktop\cradle\src;C:\Users\fried\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\fried\Desktop\cradle\src;C:\Users\fried\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/fried/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/fried/Desktop/cradle/build/bin/MinSizeRel/cradle.exe -installedDir C:/Users/fried/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\fried\vcpkg\installed\x64-windows\lib\imgui.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;dwmapi.lib;C:\Users\fried\vcpkg\installed\x64-windows\lib\fmt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/fried/Desktop/cradle/build/MinSizeRel/cradle.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/fried/Desktop/cradle/build/bin/MinSizeRel/cradle.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\fried\Desktop\cradle\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/fried/vcpkg/installed/x64-windows/include" /Zc:__cplusplus /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SPDLOG_FMT_EXTERNAL;SPDLOG_FWRITE_UNLOCKED;FMT_SHARED;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SPDLOG_FMT_EXTERNAL;SPDLOG_FWRITE_UNLOCKED;FMT_SHARED;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\fried\Desktop\cradle\src;C:\Users\fried\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\fried\Desktop\cradle\src;C:\Users\fried\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/fried/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Users/fried/Desktop/cradle/build/bin/RelWithDebInfo/cradle.exe -installedDir C:/Users/fried/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\fried\vcpkg\installed\x64-windows\lib\imgui.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;dwmapi.lib;C:\Users\fried\vcpkg\installed\x64-windows\lib\fmt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/fried/Desktop/cradle/build/RelWithDebInfo/cradle.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/fried/Desktop/cradle/build/bin/RelWithDebInfo/cradle.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\fried\Desktop\cradle\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/fried/Desktop/cradle/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe -SC:/Users/fried/Desktop/cradle -BC:/Users/fried/Desktop/cradle/build --check-stamp-file C:/Users/fried/Desktop/cradle/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeDependentOption.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindThreads.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\fried\Desktop\cradle\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\Users\fried\Desktop\cradle\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\Users\fried\Desktop\cradle\build\CMakeFiles\3.29.2\CMakeSystem.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-config-version.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-config.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-targets-debug.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-targets-release.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-targets.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-config.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-targets-debug.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-targets-release.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-targets.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfig.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigTargets-debug.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigTargets-release.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigTargets.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigVersion.cmake;C:\Users\fried\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\fried\Desktop\cradle\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/fried/Desktop/cradle/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe -SC:/Users/fried/Desktop/cradle -BC:/Users/fried/Desktop/cradle/build --check-stamp-file C:/Users/fried/Desktop/cradle/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeDependentOption.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindThreads.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\fried\Desktop\cradle\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\Users\fried\Desktop\cradle\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\Users\fried\Desktop\cradle\build\CMakeFiles\3.29.2\CMakeSystem.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-config-version.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-config.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-targets-debug.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-targets-release.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-targets.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-config.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-targets-debug.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-targets-release.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-targets.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfig.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigTargets-debug.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigTargets-release.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigTargets.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigVersion.cmake;C:\Users\fried\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\fried\Desktop\cradle\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/fried/Desktop/cradle/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe -SC:/Users/fried/Desktop/cradle -BC:/Users/fried/Desktop/cradle/build --check-stamp-file C:/Users/fried/Desktop/cradle/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeDependentOption.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindThreads.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\fried\Desktop\cradle\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\Users\fried\Desktop\cradle\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\Users\fried\Desktop\cradle\build\CMakeFiles\3.29.2\CMakeSystem.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-config-version.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-config.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-targets-debug.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-targets-release.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-targets.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-config.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-targets-debug.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-targets-release.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-targets.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfig.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigTargets-debug.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigTargets-release.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigTargets.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigVersion.cmake;C:\Users\fried\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\fried\Desktop\cradle\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/fried/Desktop/cradle/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Strawberry\c\bin\cmake.exe -SC:/Users/fried/Desktop/cradle -BC:/Users/fried/Desktop/cradle/build --check-stamp-file C:/Users/fried/Desktop/cradle/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeDependentOption.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeFindDependencyMacro.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CheckCXXSourceCompiles.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\FindThreads.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Strawberry\c\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Users\fried\Desktop\cradle\build\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;C:\Users\fried\Desktop\cradle\build\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;C:\Users\fried\Desktop\cradle\build\CMakeFiles\3.29.2\CMakeSystem.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-config-version.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-config.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-targets-debug.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-targets-release.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\fmt\fmt-targets.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-config.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-targets-debug.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-targets-release.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\imgui\imgui-targets.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfig.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigTargets-debug.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigTargets-release.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigTargets.cmake;C:\Users\fried\vcpkg\installed\x64-windows\share\spdlog\spdlogConfigVersion.cmake;C:\Users\fried\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\fried\Desktop\cradle\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\fried\Desktop\cradle\src\cache\player_cache.cpp" />
+    <ClCompile Include="C:\Users\fried\Desktop\cradle\src\core\cradle.cpp" />
+    <ClCompile Include="C:\Users\fried\Desktop\cradle\src\main.cpp" />
+    <ClCompile Include="C:\Users\fried\Desktop\cradle\src\modules\aimbot\aimbot_module.cpp" />
+    <ClCompile Include="C:\Users\fried\Desktop\cradle\src\modules\esp\esp_module.cpp" />
+    <ClCompile Include="C:\Users\fried\Desktop\cradle\src\overlay\overlay.cpp" />
+    <ClCompile Include="C:\Users\fried\Desktop\cradle\src\util\engine\datamodel\datamodel.cpp" />
+    <ClCompile Include="C:\Users\fried\Desktop\cradle\src\util\engine\instance\instance.cpp" />
+    <ClCompile Include="C:\Users\fried\Desktop\cradle\src\util\engine\visualengine\visualengine.cpp" />
+    <ClCompile Include="C:\Users\fried\Desktop\cradle\src\util\engine\wallcheck\wallcheck.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\fried\Desktop\cradle\build\ZERO_CHECK.vcxproj">
+      <Project>{EBB9781C-9547-39AF-8ACE-A9DE78F7845C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,10 @@
+^C:\USERS\FRIED\DESKTOP\CRADLE\BUILD\CMAKEFILES\70BFD64E32F60BFA8A2BCF99DBE84072\GENERATE.STAMP.RULE
+setlocal
+C:\Strawberry\c\bin\cmake.exe -SC:/Users/fried/Desktop/cradle -BC:/Users/fried/Desktop/cradle/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/fried/Desktop/cradle/build/cradle.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
