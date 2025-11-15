@@ -3,13 +3,13 @@ an actively maintained free and open-source roblox external for version `version
 
 ## requirements
 - cmake 3.20+
-- visual studio 2022 (or any c++17-compatible compiler)
+- visual studio 2022
 - vcpkg
 
 ## dependencies
 this project uses `spdlog` and `imgui`. we use [vcpkg](https://github.com/microsoft/vcpkg) to manage dependencies:
 ```powershell
-.\vcpkg.exe install spdlog imgui:x64-windows
+vcpkg install spdlog:x64-windows imgui:x64-windows
 ```
 
 ## building
@@ -17,7 +17,7 @@ clone the repo and build in release mode:
 ```powershell
 git clone https://github.com/wearish/cradle.git
 cd cradle
-cmake -S . -B build
+cmake -S . -B build -G "Visual Studio 17 2022"
 cmake --build build --config Release
 ```
 after a successful build, the executable will be located at build\bin\release\cradle.exe.
