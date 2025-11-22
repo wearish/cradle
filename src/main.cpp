@@ -7,6 +7,7 @@
 #include "modules/module_manager.hpp"
 #include "modules/esp/esp_module.hpp"
 #include "modules/aimbot/aimbot_module.hpp"
+#include "modules/triggerbot/triggerbot_module.hpp"
 
 int main()
 {
@@ -32,8 +33,10 @@ int main()
     auto &module_manager = cradle::modules::ModuleManager::get_instance();
     auto esp_module = std::make_unique<cradle::modules::ESPModule>();
     auto aimbot_module = std::make_unique<cradle::modules::AimbotModule>();
+    auto triggerbot_module = std::make_unique<cradle::modules::TriggerbotModule>();
     module_manager.register_module(std::move(esp_module));
     module_manager.register_module(std::move(aimbot_module));
+    module_manager.register_module(std::move(triggerbot_module));
     spdlog::info("module manager initialized");
 
     spdlog::info("overlay initialized - press insert to toggle menu");
