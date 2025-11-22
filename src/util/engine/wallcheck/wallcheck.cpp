@@ -162,14 +162,6 @@ namespace cradle::engine
                 }
             }
 
-            vector3 points[] = {head, torso, pelvis, left_foot, right_foot};
-            float min_dist = FLT_MAX;
-            for (const auto &p : points) {
-                float d = (p - from).magnitude();
-                if (d < min_dist) min_dist = d;
-            }
-            if (min_dist > 500.0f) return true;
-
             struct Ray { vector3 target; vector3 dir; float dist; };
             Ray rays[5] = {
                 {head, (head - from).normalize(), (head - from).magnitude()},
@@ -185,7 +177,7 @@ namespace cradle::engine
 
             for (const auto &ray : rays) {
                 if (checked >= 5) break;
-                if (ray.dist <= 0.0f || ray.dist > 500.0f) {
+                if (ray.dist <= 0.0f) {
                     checked++;
                     continue;
                 }
