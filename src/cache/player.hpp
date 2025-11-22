@@ -6,6 +6,7 @@ namespace cradle::engine {
     
     struct Player {
         std::string name;
+        std::string team;
         
         Instance character;
         Instance humanoid;

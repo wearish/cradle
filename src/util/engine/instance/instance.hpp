@@ -36,6 +36,7 @@ namespace cradle::engine
         float get_health() const;
         float get_max_health() const;
         int get_rig_type() const;
+        std::string get_team() const;
 
         bool is_valid() const { return address > 0x10000; }
     };

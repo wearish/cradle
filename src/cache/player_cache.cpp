@@ -119,11 +119,13 @@ namespace cradle::engine
                 continue;
 
             std::string player_name = player.get_name();
+            std::string player_team = player.get_team();
             auto cached = entity_map.find(character.address);
 
             if (cached != entity_map.end())
             {
                 cached->second.name = player_name;
+                cached->second.team = player_team;
                 snapshot.push_back(cached->second);
                 continue;
             }
@@ -132,6 +134,7 @@ namespace cradle::engine
             if (entity.is_valid())
             {
                 entity.name = player_name;
+                entity.team = player_team;
                 entity_map[character.address] = entity;
                 snapshot.push_back(entity);
             }
@@ -170,6 +173,7 @@ namespace cradle::engine
 
         Player p = build_player(character, local);
         p.name = local.get_name();
+        p.team = local.get_team();
         return p;
     }
 }

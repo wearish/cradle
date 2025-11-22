@@ -19,6 +19,7 @@ namespace cradle
             settings.push_back(Setting("box esp", true));
             settings.push_back(Setting("name esp", false));
             settings.push_back(Setting("distance esp", false));
+            settings.push_back(Setting("team check", true));
             settings.push_back(Setting("visible color", 0.0f, 1.0f, 0.0f, 1.0f));
             settings.push_back(Setting("hidden color", 1.0f, 0.0f, 0.0f, 1.0f));
         }
@@ -30,11 +31,14 @@ namespace cradle
             auto box_setting = get_setting("box esp");
             auto name_setting = get_setting("name esp");
             auto distance_setting = get_setting("distance esp");
+            auto team_check_setting = get_setting("team check");
             auto visible_color = get_setting("visible color");
             auto hidden_color = get_setting("hidden color");
 
             if (!box_setting || !box_setting->value.bool_val)
                 return;
+
+            bool team_check = team_check_setting && team_check_setting->value.bool_val;
 
             auto players = PlayerCache::get_players();
             if (players.empty())
@@ -63,6 +67,7 @@ namespace cradle
 
             ImDrawList *draw_list = ImGui::GetBackgroundDrawList();
             auto local = PlayerCache::get_local_player();
+            std::string local_team = local.team;
 
             for (auto &player : players)
             {
@@ -76,6 +81,9 @@ namespace cradle
                     if (player.hrp.address == local.hrp.address)
                         continue;
                 }
+
+                if (team_check && !player.team.empty() && !local_team.empty() && player.team == local_team)
+                    continue;
 
                 vector3 head_pos = player.head.get_pos();
                 vector3 upper_torso_pos = player.upper_torso.is_valid() ? player.upper_torso.get_pos() : player.hrp.get_pos();

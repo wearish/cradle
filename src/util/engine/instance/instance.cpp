@@ -217,4 +217,28 @@ namespace cradle::engine
             return 0;
         return cradle::memory::read<int>(address + Offsets::Humanoid::RigType);
     }
+
+    std::string Instance::get_team() const
+    {
+        if (!address || address < 0x10000)
+            return "Unknown";
+
+        std::uint64_t team_ptr = cradle::memory::read<std::uint64_t>(address + Offsets::Player::Team);
+        if (!team_ptr || team_ptr < 0x10000)
+            return "Unknown";
+
+        std::uint64_t name_ptr = cradle::memory::read<std::uint64_t>(team_ptr + Offsets::Instance::Name);
+        if (!name_ptr || name_ptr < 0x10000)
+            return "Unknown";
+
+        char buffer[256] = {};
+        for (int i = 0; i < 255; i++)
+        {
+            char c = cradle::memory::read<char>(name_ptr + i);
+            if (c == '\0')
+                break;
+            buffer[i] = c;
+        }
+        return std::string(buffer);
+    }
 }

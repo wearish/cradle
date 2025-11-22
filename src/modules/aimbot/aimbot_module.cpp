@@ -21,6 +21,7 @@ namespace cradle::modules
         settings.push_back(Setting("fov size", 100.0f, 10.0f, 500.0f));
         settings.push_back(Setting("fov circle", true));
         settings.push_back(Setting("wall check", true));
+        settings.push_back(Setting("team check", true));
         settings.push_back(Setting("smoothness", 0.0f, 0.0f, 0.95f));
         settings.push_back(Setting("fov color", 1.0f, 1.0f, 1.0f, 1.0f));
     }
@@ -34,13 +35,15 @@ namespace cradle::modules
 
             auto fov_size_setting = get_setting("fov size");
             auto wall_check_setting = get_setting("wall check");
+            auto team_check_setting = get_setting("team check");
             auto smoothness_setting = get_setting("smoothness");
 
-            if (!fov_size_setting || !wall_check_setting || !smoothness_setting)
+            if (!fov_size_setting || !wall_check_setting || !team_check_setting || !smoothness_setting)
                 return;
 
             float fov_size = fov_size_setting->value.float_val;
             bool wall_check = wall_check_setting->value.bool_val;
+            bool team_check = team_check_setting->value.bool_val;
             float smoothness = smoothness_setting->value.float_val;
 
             auto players = PlayerCache::get_players();
@@ -50,6 +53,8 @@ namespace cradle::modules
             auto local = PlayerCache::get_local_player();
             if (!local.is_valid() || !local.hrp.is_valid())
                 return;
+
+            std::string local_team = local.team;
 
             using cradle::engine::VisualEngine;
             VisualEngine ve = VisualEngine::get_instance();
@@ -101,6 +106,9 @@ namespace cradle::modules
                 if (p.hrp.address == local.hrp.address)
                     continue;
                 if (p.health <= 0.0f)
+                    continue;
+
+                if (team_check && !p.team.empty() && !local_team.empty() && p.team == local_team)
                     continue;
                 vector3 head_pos = p.head.get_pos();
 
